@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tariffx.ai/logo.png" width="128">
+  <img src="assets/banner.jpg" width="500" style="border-radius: 8px;">
 </p>
 
 <h1 align="center">TariffX AI Agent Skill for OpenClaw</h1>
