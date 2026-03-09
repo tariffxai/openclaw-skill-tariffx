@@ -21,7 +21,7 @@ def main():
         }, ensure_ascii=False))
         sys.exit(1)
         
-    url = "https://tariffx-backend-staging.onrender.com/api/v1/openapi/inference"
+    url = "https://tariffx-backend.onrender.com/api/v1/openapi/inference"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
