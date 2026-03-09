@@ -29,19 +29,20 @@ This plugin is connected to the TariffX enterprise gateway. To enable commercial
 👉 [Get your API Key on TariffX.ai](https://tariffx.ai/dashboard/api-keys)  
 *(Each successful cloud inference consumes 1 API Credit)*
 
-### Step 2: Download the Skill
-Open your OpenClaw working directory and clone this skill into your agents' environment:
+### Step 2: The Magic Auto-Install Prompt (Recommended)
+You don't need to manually configure the terminal! Just wake up your OpenClaw agent and send it this magic prompt (replace `YOUR_KEY` with your actual API key):
+
+> "Hi OpenClaw, please install the official TariffX Intelligence Skill for yourself:
+> 1. In your system terminal, go to your skills directory and run: `git clone https://github.com/tariffxai/openclaw-skill-tariffx.git tariffx_hts`
+> 2. Configure this environment variable in your system: `export TARIFFX_API_KEY="tx-live-YOUR_KEY"`
+> After you finish the installation, reply to me: 'Installation complete! I am ready to classify products.'"
+
+### Step 3: Manual Installation (For Developers)
+If you prefer to install it manually and manage your own environment variables:
 
 ```bash
 cd path/to/your/openclaw/skills
 git clone https://github.com/tariffxai/openclaw-skill-tariffx.git tariffx_hts
-```
-
-### Step 3: Inject Environment Variables
-Ensure your agent can read your API Key from the host environment or a `.env` file before booting up:
-
-```bash
-# Linux / macOS (Or add to your .bashrc / .zshrc)
 export TARIFFX_API_KEY="tx-live-xxxxxxxx"
 ```
 
@@ -75,19 +76,20 @@ OpenClaw will smoothly call the cloud database autonomously and report the perfe
 👉 [Get your free API Key on TariffX.ai](https://tariffx.ai/dashboard/api-keys)  
 *(每次云端调用均消耗 1 枚 API Credit)*
 
-### 步骤 2：下载并放入龙虾肚子
-打开你装有 OpenClaw 引擎终端的工作目录，将本技能 Clone 下来：
+### 步骤 2：自动安装魔法咒语 (强烈推荐)
+作为非技术用户，你完全不需要去折腾复杂的命令行。直接启动你的 OpenClaw 聊天框，复制以下魔法咒语发给它即可（别忘了把 `YOUR_KEY` 替换成你真实的 API 秘钥）：
+
+> "你好，请为你自己安装官方的 TariffX 美国海关情报插件。
+> 请在你的环境终端进入 skills 目录并运行 `git clone https://github.com/tariffxai/openclaw-skill-tariffx.git tariffx_hts`。
+> 然后，将我的专属秘钥作为环境变量配置到系统中：`export TARIFFX_API_KEY="tx-live-YOUR_KEY"`。
+> 完成全部下载和安装后，请回复我：系统已就绪，随时可以进行海关编码测算。"
+
+### 步骤 3：极客手动安装 (开发者适用)
+如果你偏好自己动手配置终端与系统环境变量：
 
 ```bash
 cd path/to/your/openclaw/skills
 git clone https://github.com/tariffxai/openclaw-skill-tariffx.git tariffx_hts
-```
-
-### 步骤 3：注入环境变量
-确保你的龙虾在运行前，能从宿主机或 `.env` 配置文件中读取你刚申请到的那把锁钥：
-
-```bash
-# Linux / macOS (或直接写进系统 .bashrc / .zshrc)
 export TARIFFX_API_KEY="tx-live-xxxxxxxx"
 ```
 
