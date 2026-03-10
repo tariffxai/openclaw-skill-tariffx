@@ -39,7 +39,12 @@ You don't need to manually configure the terminal! Just wake up your OpenClaw ag
 > 2. Configure this environment variable in your system: `export TARIFFX_API_KEY="tx-live-YOUR_KEY"`
 > After you finish the installation, reply to me: 'Installation complete! I am ready to classify products.'"
 
-### Option B: Manual Installation (For Developers)
+### Option C: Update Existing Skill (If you installed it before)
+If you have already installed the skill previously and want to pull the latest features (like the new Cost Calculator and Bond Actuary), send your agent this prompt:
+
+> "Hi OpenClaw, please update my TariffX Intelligence Skill. Go to your skills directory `tariffx_hts` and run: `git pull origin main`. Then let me know when the update is complete!"
+
+### Option D: Manual Installation (For Developers)
 If you prefer to install it manually and manage your own environment variables:
 
 1. **Download the Skill**
@@ -100,7 +105,12 @@ OpenClaw will smoothly call the cloud database autonomously for whichever tool i
 > 然后，将我的专属秘钥作为环境变量配置到系统中：`export TARIFFX_API_KEY="tx-live-YOUR_KEY"`。
 > 完成全部下载和安装后，请回复我：系统已就绪，随时可以进行海关编码测算。"
 
-### 方案 B：极客手动安装 (开发者适用)
+### 方案 C：老用户魔法升级咒语 (如果你之前已经安装过)
+如果你昨天或之前已经安装了该插件，现在想要更新今天最新发布的**算税计算器**与**保单精算**功能，请向龙虾发送这个咒语：
+
+> "你好龙虾，TariffX 官方发布了强大的算费和保单技能！请进入你的 `tariffx_hts` 技能目录，并执行 `git pull origin main` 来帮我也升级一下。好了告诉我！"
+
+### 方案 D：极客手动安装 (开发者适用)
 如果你偏好自己动手配置终端与系统环境变量：
 
 1. **下载技能代码**
