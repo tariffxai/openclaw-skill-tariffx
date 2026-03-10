@@ -20,7 +20,9 @@ Every duty calculation, Section 301 penalty check, UFLPA (Uyghur Forced Labor Pr
 ## 🌟 Features
 1. 💡 **High Precision HTS Classification**: Accurate down to the full 10-digit US Customs tariff number.
 2. 💰 **Comprehensive Duty Estimation**: Calculates Column 1 Base rates, Section 301 additional tariffs, and effective total rates.
-3. 🚨 **Commercial Compliance Defense**: Automatically screens for high-risk red flags like UFLPA restrictions and AD/CVD (Anti-Dumping / Countervailing Duties) orders.
+3. 🧮 **Precision Calculator & Supply Chain Costing**: Input FOB values and origin countries to compute real dollar values for MPF, HMF, Section 232 splits, and Anti-Dumping (AD/CVD) surcharges.
+4. 📄 **Customs Bond Actuary**: Generates recommended Continuous vs Single Transaction Bond sizes based on latest CBP mathematical guidelines and risk multipliers.
+5. 🚨 **Commercial Compliance Defense**: Automatically screens for high-risk red flags like UFLPA restrictions and AD/CVD (Anti-Dumping / Countervailing Duties) orders.
 
 ## 🔧 Installation & Configuration
 
@@ -55,11 +57,18 @@ export TARIFFX_API_KEY="tx-live-xxxxxxxx"
 
 ## 🚀 See the Magic in Action
 
-Wake up your OpenClaw agent and try commanding it in natural language:
+Wake up your OpenClaw agent and try commanding it in natural language with these three distinct capabilities:
 
+**1. Inference & Compliance Check**
 > "I just imported a batch of 100% mulberry silk women's sweaters. Help me use TariffX to check the US import duty rate, and see if there are any UFLPA compliance risks I need to avoid."
 
-OpenClaw will smoothly call the cloud database autonomously and report the perfectly summarized, highly accurate data back to you.
+**2. Precision Cost Calculator**
+> "Help me use TariffX Calculator to compute the exact duties for $1500 USD worth of goods under HTS 6204594040 from China."
+
+**3. Actuarial Customs Bond Estimate**
+> "I plan to import about $50,000 worth of taxable goods next year, but some items might overlap with AD/CVD. Please use TariffX Bond Calculator to tell me how large of a Continuous Bond I need to secure."
+
+OpenClaw will smoothly call the cloud database autonomously for whichever tool is needed, and report the perfectly summarized, highly accurate data back to you.
 
 ---
 ---
@@ -72,7 +81,9 @@ OpenClaw will smoothly call the cloud database autonomously and report the perfe
 ## 🌟 特色
 1. 💡 **极精准 (High Precision)**的商品归类 (HTS Classification)，最高至美国 10 位海关编码。
 2. 💰 **完整的税率估算体系**（包含 Column 1 Base, Section 301 Rates, 综合税率）。
-3. 🚨 **商业合规底线防御**：强制自动检测有无涉疆 (UFLPA) 与倾销 (AD/CVD) 爆雷清单。
+3. 🧮 **真实关税与落地成本计算器**：针对给定的 FOB 货值与原产国，精准算清 MPF、HMF 货物附加费、铝钢 232 拆解关税以及防倾销确诊罚金。
+4. 📄 **关税保单 (Bond) 精算师**：内嵌美国海关 (CBP) 最新十万/万级阶梯计费与风险系数体系，建议最合理的 Bond 投保额度。
+5. 🚨 **商业合规底线防御**：强制自动检测有无涉疆 (UFLPA) 与倾销 (AD/CVD) 爆雷清单。
 
 ## 🔧 安装与配置指南
 
@@ -107,11 +118,18 @@ export TARIFFX_API_KEY="tx-live-xxxxxxxx"
 
 ## 🚀 见证奇迹时刻
 
-重新唤醒并运行你的 OpenClaw Agent。试着用自然语言命令它：
+重新唤醒并运行你的 OpenClaw Agent。试着用自然语言尝试以下三大能力：
 
-> "我刚进口了一批 100% 桑蚕丝女装毛衣，帮我用 TariffX 查查关税是多少点？顺便看看有没有涉疆等合规性问题可以帮我避雷。"
+**1. 智能归类与合规排查**
+> "我刚进口了一批 100% 桑蚕丝女装毛衣，帮我用 TariffX 查查海关编码和大致税负是多少？顺便看看有没有涉疆等合规性问题可以帮我避雷。"
 
-OpenClaw 会顺滑地自主调用、访问云端数据库，并将完美总结且精准的数据，用自然语言汇报给你。
+**2. 精算账房总管**
+> "我确信我的 HTS 是 6204594040，这批货的发票票面 FOB 货值是 1500 美金，中国原产。帮我用 TariffX 计算器生成一份精确到美元的关税明细账单。"
+
+**3. 海关保金精算师**
+> "我明年大概一共要缴纳 50000 美金的进口税，但是我的商品属于反倾销/反补贴 (AD/CVD) 严查清单。帮我用 TariffX Bond计算器评估一下我该买多大额度的 Continuous Bond。"
+
+OpenClaw 会顺滑地自主选用相应工具、访问云端数据库，并将完美概括且精准核算的数据账单，用自然语言汇报给你。
 
 ## 🛡️ License
 MIT License.
